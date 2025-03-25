@@ -1,0 +1,12 @@
+name: "ESLint with Gemini AI Suggestions"
+description: "Run ESLint on PRs and generate alternative code snippets with explanations using Gemini API"
+inputs:
+  github_token:
+    description: "GitHub Token"
+    required: true
+  gemini_api_key:
+    description: "Gemini API Key"
+    required: true
+runs:
+  using: "node16"
+  main: "entrypoint.js"
